@@ -7,14 +7,14 @@ import LOGO from "./x-logo.png";
 export default function NavBar() {
   return (
     <nav>
-        <Image
+      <Image
         src={LOGO}
         alt="logo"
         placeholder="blur"
         width={100}
         quality={100}
-        />
-        <h1>Demo Helpdesk</h1>
+      />
+      <h1>Demo Helpdesk</h1>
       <Link href="/">Dashboard</Link>
       <Link href="/tickets">Tickets</Link>
     </nav>
