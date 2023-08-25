@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 //logo
-import LOGO from "./dojo-logo.png";
+import LOGO from "./x-logo.png";
 
 export default function NavBar() {
   return (
@@ -11,7 +11,7 @@ export default function NavBar() {
         src={LOGO}
         alt="logo"
         placeholder="blur"
-        width={70}
+        width={100}
         quality={100}
         />
         <h1>Demo Helpdesk</h1>
