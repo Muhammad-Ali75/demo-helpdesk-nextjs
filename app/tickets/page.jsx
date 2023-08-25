@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import TicketList from "./TicketList";
 import Loading from "../loading";
 
