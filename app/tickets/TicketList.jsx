@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 async function getTicketsData() {
@@ -16,9 +17,11 @@ export default async function TicketList() {
     <>
       {tickets.map(({ id, title, body, priority }) => (
         <div key={id} className="card my-5">
+            <Link href={`tickets/${id}`}>
           <h3>{title}</h3>
           <p>{body.slice(0, 200)}...</p>
           <div className={`pill ${priority}`}>{priority} priority</div>
+        </Link>
         </div>
       ))}
       {!tickets.length && (
